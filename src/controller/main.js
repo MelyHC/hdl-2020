@@ -3,14 +3,14 @@ import 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyDwCn2vF7OFw_My_Q-GvZtEOVYzJDo7vR0',
-  authDomain: 'hdl-2020-c57a0.firebaseapp.com',
-  databaseURL: 'https://hdl-2020-c57a0.firebaseio.com',
-  projectId: 'hdl-2020-c57a0',
-  storageBucket: 'hdl-2020-c57a0.appspot.com',
-  messagingSenderId: '91452063839',
-  appId: '1:91452063839:web:6dedc5aca043d99ee69bea',
-  measurementId: 'G-0RB9L4XW6X',
+  apiKey: "AIzaSyBz1l49rc0F8w0_zfotzKHAuosScZBHuUI",
+  authDomain: "yanapay-latam.firebaseapp.com",
+  databaseURL: "https://yanapay-latam.firebaseio.com",
+  projectId: "yanapay-latam",
+  storageBucket: "yanapay-latam.appspot.com",
+  messagingSenderId: "580339374421",
+  appId: "1:580339374421:web:4df664a66875f39f1c77dc",
+  measurementId: "G-JH4774PZLH"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

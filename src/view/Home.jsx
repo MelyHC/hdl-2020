@@ -4,23 +4,19 @@ import NavBar from '../components/NavBar';
 import CreatePost from '../components/CreatePost';
 import PostCard from '../components/PostCard';
 
-const Profile = () => {
-
+const Home = () => {
   return (
     <>
       <NavBar />
-      <section className="mt-5 pt-3">
-        {/* <div class="user-information"> </div> */}
-        <p>Publicaciones</p>
-        {/* <section> */}
+      <section className="mt-5 pt-3 row m-0 justify-content-center">
         <CreatePost />
         <PostCard />
-        {/* </section> */}
-        {/* <section id="allPost" class="post-done">
-          </section> */}
+        <section>
+          {/* todos los post */}
+        </section>
       </section>
     </>
   )
 }
 
-export default Profile;
+export default Home;

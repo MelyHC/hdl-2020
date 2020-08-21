@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import google from '../assets/icon-google.png';
 
 const Login = () => {
   return (
@@ -11,8 +12,8 @@ const Login = () => {
         <button> Ingresar </button>
       </div>
       <p>O puedes ingresar con ...</p>
-      <img src="./assets/icon-google.png" />
-      <p>¿No tienes cuenta?,<Link to="/register">Regístrate</Link> </p>
+      <img src={google} alt="Google" />
+      <p>¿No tienes cuenta? <Link to="/register">Regístrate</Link> </p>
     </form>
   )
 }
