@@ -91,9 +91,19 @@
   resize: none;
 }
 
+.btn-light-pink {
+  color: #F25F5F
+}
+
+.btn-light-pink:hover {
+  color: #ffffff;
+  background-color: #F25F5F;
+}
+
 @media (min-width: 768px) {
   .fixed-md-none {
     position: initial;
     margin-top: -30px !important;
   }
+  /* .p-md-3 */
 }
