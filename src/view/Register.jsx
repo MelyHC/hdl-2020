@@ -12,7 +12,7 @@ const Register = () => {
         <p>Tienes cuenta <Link to="/login">Inicia sesión </Link></p>
       </div>
     </form>
-  )
-}
+  );
+};
 
 export default Register;

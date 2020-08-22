@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+/*
+.btn-save-comment, .btn-cancel-comment {
+  width: 28px; 
+  height: 30px;
+  background-color: rgba(218, 199, 182, 0);
+  border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-welcome{
+  font-size: 16px;
+} */
+*{
+  margin: 0px;
+  padding: 0px;
+} 
+.logo-header{
+  width: 70px;
+  height: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-color{
+  color: #ffff;
 }
-
-.App-link {
-  color: #61dafb;
+.bg-gray{
+  background-color:#F1F1F1;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-welcome{
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: -20px;
+}
+.btn-ts{
+  background-color: #F25F5F ;
+  color: #FFFF;
+  font-size: 16px;
+  border-radius: 15px;
+}
+.btn-bs{
+  background-color: #6D594F;
+  color: #FFFF;
+  font-size: 16px;
+  border-radius: 15px;
+}
+.img-welcome{
+  /* margin-top: -50px; */
+  position: fixed;
+  bottom: -15px;
+  
+}
+.btn-save-comment, .img-save {
+  border:none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.btn-cancel-comment, .img-cancel {
+  border:none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+/*UserInfo*/
+.img-coverPage{
+  width: 200px;
+  height: 200px;
+}
+.img {
+ width: 100px;
+ height: 100px;
 }
