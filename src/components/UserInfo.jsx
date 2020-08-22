@@ -7,7 +7,7 @@ import iconCancel from '../assets/icons/icon-cancel.png';
 const UserInfo = () => (
   <div className="">
     <div className="d-flex justify-content-center">
-      <img className="img-coverPage" src={coverPage} alt="cover page" />
+      <img className="img-fluid" src={coverPage} alt="cover page" />
     </div>
     <div className="d-flex justify-content-center">
       <img className="img rounded-circle" src={logoUser} alt="icon user" />

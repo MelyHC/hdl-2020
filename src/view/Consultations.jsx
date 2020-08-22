@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar';
 const Consultations = () => (
   <>
     <NavBar />
-    <div className="card">
+    <div className="card pt-5 mt-5">
       <div className="card-header">
         Realiza tu pregunta y en breve te responerá un especialista
       </div>

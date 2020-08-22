@@ -47,10 +47,10 @@ const Register = () => {
   }
 
   return (
-    <div className="row p-0 m-0 justify-content-center align-items-center vh-100">
-      <div className="col-sm-8 col-md-6 col-lg-4 col-xl-3">
+    <div className="row p-0 m-0 justify-content-center align-items-center vh-100 bg-light-pink">
+      <div className="col-sm-8 col-md-6 col-lg-4 col-xl-3 bg-white">
         <div className="d-flex justify-content-center">
-          <img className="size-img " src={logo} alt="Logo Yanapay" />
+          <img className="size-img mt-2" src={logo} alt="Logo Yanapay" />
         </div>
         <p className="m-0 text-center text-rbga">Únete a esta gran comunidad</p>
         <form className="text-center" onSubmit={registerUser}>

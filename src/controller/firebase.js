@@ -38,7 +38,7 @@ const userValidate = () => {
 const signIn = async (email, pass) =>
   firebase.auth().signInWithEmailAndPassword(email, pass)
     .then(res => {
-      userValidate()
+      // userValidate()
       return res
     });
 
