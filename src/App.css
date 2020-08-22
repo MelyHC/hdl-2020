@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+/* Register Login */
+
+.bottom {
+  border-style: hidden;
+  border-radius: 0;
+  border-bottom: 1px solid #979797;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-pink {
+  background-color: #F25F5F;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-pink:hover {
+  background-color: #c75050;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-rbga {
+  color: rgba(0, 0, 0, 0.42);
 }
 
-.App-link {
-  color: #61dafb;
+.text-pink {
+  color: #F25F5F
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-pink:hover {
+  color: #c75050
 }
