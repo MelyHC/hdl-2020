@@ -4,7 +4,7 @@ import coverPage from '../assets/generals/logo-principal.png';
 import iconSave from '../assets/icons/icon-save.png';
 import iconCancel from '../assets/icons/icon-cancel.png';
 
-const UserInfo = () => (
+const UserInfo = ({ currentUser }) => (
   <div className="">
     <div className="d-flex justify-content-center">
       <img className="img-fluid m-img" src={coverPage} alt="cover page" />
@@ -13,7 +13,7 @@ const UserInfo = () => (
       <img className="img rounded-circle" src={logoUser} alt="icon user" />
       <div className="information-user">
         <div className="name">
-          <p id="editProfile" contenteditable="false"> Sabina Canchumani Huaman</p>
+          <p id="editProfile" contenteditable="false">{currentUser.name}</p>
           <p> Doctora en Ginecología</p>
         </div>
         <button className="btn-save-comment" type="button">
