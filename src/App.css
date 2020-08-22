@@ -1,5 +1,10 @@
 /* Register Login */
 
+.size-img {
+  height: 25vh;
+  margin-top: -20px;
+}
+
 .bottom {
   border-style: hidden;
   border-radius: 0;
@@ -24,4 +29,59 @@
 
 .text-pink:hover {
   color: #c75050
+}
+
+.logo-header {
+  width: 70px;
+  height: 50px;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+.nav-color {
+  color: #ffff;
+}
+
+.bg-gray {
+  background-color: #F1F1F1;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.btn-save-comment, .img-save {
+  border: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.btn-cancel-comment, .img-cancel {
+  border: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/*UserInfo*/
+
+.img-coverPage {
+  width: 200px;
+  height: 200px;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 768px) {
+  .fixed-md-none {
+    position: initial;
+    margin-top: -30px !important;
+  }
 }

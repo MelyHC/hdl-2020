@@ -2,6 +2,7 @@ import React, { createRef } from 'react';
 import { Link } from 'react-router-dom';
 import firebase from '../controller/firebase';
 import { useHistory } from 'react-router-dom';
+import logo from '../assets/generals/logo-principal.png';
 
 const Register = () => {
 
@@ -47,7 +48,10 @@ const Register = () => {
 
   return (
     <div className="row p-0 m-0 justify-content-center align-items-center vh-100">
-      <div className="col-sm-6 col-md-5 col-lg-4">
+      <div className="col-sm-8 col-md-6 col-lg-4 col-xl-3">
+        <div className="d-flex justify-content-center">
+          <img className="size-img " src={logo} alt="Logo Yanapay" />
+        </div>
         <p className="m-0 text-center text-rbga">Únete a esta gran comunidad</p>
         <form className="text-center" onSubmit={registerUser}>
           <input className="form-control my-3 bottom px-0" name="name" type="text" placeholder="Nombre y Apellido" required />

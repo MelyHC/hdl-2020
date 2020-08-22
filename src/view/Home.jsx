@@ -3,20 +3,35 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import CreatePost from '../components/CreatePost';
 import PostCard from '../components/PostCard';
+import UserInfo from '../components/UserInfo';
+import InfoCard from '../components/InfoCard';
 
 const Home = () => {
   return (
-    <>
+    <div className="container-fluid bg-gray">
       <NavBar />
-      <section className="mt-5 pt-3 row m-0 justify-content-center">
-        <CreatePost />
-        <PostCard />
-        <section>
-          {/* todos los post */}
-        </section>
-      </section>
-    </>
-  )
-}
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <UserInfo />
+          </div>
+          <div className="col">
+            <CreatePost />
+            <PostCard />
+          </div>
+          <div className="col">
+          <button className="btn btn-ts" type="button">Pedir Ayuda</button>
+            <InfoCard />
+            <InfoCard />
+            <InfoCard />
+          </div>
+            <section>
+              {/* todos los post */}
+            </section>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Home;
