@@ -46,10 +46,6 @@
   src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
-.nav-color {
-  color: #ffff;
-}
-
 .bg-gray {
   background-color: #F1F1F1;
   padding-left: 0px;
@@ -70,10 +66,29 @@
   cursor: pointer;
 }
 
+.img-edit {
+  width: 20px;
+  height: 20px;
+}
+
 /*UserInfo*/
+
 .img {
   width: 100px;
   height: 100px;
+}
+
+.img-user {
+  height: 60px !important;
+  width: 60px !important;
+}
+
+.m-img {
+  margin-top: -20px;
+}
+
+.no-resize {
+  resize: none;
 }
 
 @media (min-width: 768px) {

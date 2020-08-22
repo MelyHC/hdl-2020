@@ -5,7 +5,7 @@ import logo from '../assets/generals/logo-principal.png';
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" expand="lg" className="nav-color fixed-top">
+    <Navbar bg="light" expand="lg" className="bg-white fixed-top">
       <Navbar.Brand>
         <Link to="/home"><img src={logo} alt="imagen de product" className="logo-header" /></Link>
       </Navbar.Brand>

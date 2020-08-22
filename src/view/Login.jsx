@@ -14,7 +14,6 @@ const Login = () => {
 
     firebase.signIn(email.value, pass.value)
       .then(res => {
-        // console.log(user)
         if (res.user.emailVerified) history.push('/home')
         else alert('Activa tu cuenta para poder continuar');
 
