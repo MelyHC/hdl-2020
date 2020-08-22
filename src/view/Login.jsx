@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import google from '../assets/icon-google.png';
+import google from '../assets/icons/icon-google.png';
 
 const Login = () => {
   return (
@@ -15,7 +15,7 @@ const Login = () => {
       <img src={google} alt="Google" />
       <p>¿No tienes cuenta? <Link to="/register">Regístrate</Link> </p>
     </form>
-  )
-}
+  );
+};
 
 export default Login;

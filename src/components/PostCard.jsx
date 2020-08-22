@@ -1,20 +1,23 @@
 import React from 'react';
-import logoUser from '../assets/user.png';
+import logoUser from '../assets/icons/icon-user.png';
+import CreateComment from './CreateComment';
+import CommentCard from './CommentCard';
+import AddComment from '../assets/icons/icon-addComment.png';
 
 const PostCard = () => {
   return (
-    <>
-      <div className="">
-        <div className="">
-          <img className="" src={logoUser} alt="Foto usuario" />
+    <div className="card">
+      <div className="d-flex flex-row">
+        <div className="col-sm-8 px-3 my-1">
+          <img className="img rounded-circle" src={logoUser} alt="Foto usuario" />
           {/* ${objPost.photo ? `<img className = "user" src="${objPost.photo}"> ` : '<img className = "user" src="assets/user.png">'} */}
           <div className="">
             <p>Publicado por: </p>
-            <select className="">
+            <select className="form-control mb-2">
               <option value="0" className="">Público</option>  {/* <option value="0" {(objPost.privacy === '1') || 'selected'} className="">Público</option>*/}
               <option value="1" className="">Privado</option>
             </select>
-            <time datetime="date"></time>
+            <time dateTime="date"></time>
           </div>
         </div>
         {/* ${(user.uid === objPost.useruid) ? */}
@@ -33,20 +36,24 @@ const PostCard = () => {
         </div>
         {/* <button className="hide" hidden id="btnSave">💾</button>
         <button className="hide" hidden id="btnCancel">✖️</button> */}
-        <div className="">
+        <div className="row justify-content-center">
           <div className="">
             <label className="counterLike" ></label>
             <button type="button" className=""><img src="assets/like-solid-24.png" alt="2" />Me gusta</button>
           </div>
-          <button type="button" className=""><img src="assets/add comment.png" alt="" />Comentar</button>
+          <div>
+            <button type="button" className=""><img src={AddComment} alt="" />Comentar</button>
+          </div>
         </div>
-        <div className="name-Commentary">
-          <textarea className="text-CommentPost" rows="1" cols="40" />
-          {/* <input type="image" className="send-Comment" src="assets/send.png" />  */}
+        <div>
+          <CreateComment />
+        </div>
+        <div>
+          <CommentCard />
         </div>
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
 export default PostCard;
