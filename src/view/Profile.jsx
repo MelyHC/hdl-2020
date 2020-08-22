@@ -11,10 +11,10 @@ const Profile = () => {
       <NavBar />
       <div className="container pt-5 mt-5">
         <div className="row">
-          <div className="col-sm-4">
+          <div className="col-sm-4 p-0">
             <UserInfo />
           </div>
-          <div className="col-sm-8">
+          <div className="col-sm-8 p-0">
             <p>Mis Publicaciones</p>
             <CreatePost />
             <PostCard />

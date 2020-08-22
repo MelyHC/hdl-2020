@@ -1,9 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import {Navbar, Nav} from 'react-bootstrap';
+import { Link, useHistory } from 'react-router-dom';
+import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../assets/generals/logo-principal.png';
+import firebase from '../controller/firebase';
 
 const NavBar = () => {
+  const history = useHistory();
+
+  const signOut = () => {
+    firebase.logOut
+      .then(() => {
+        history.push('/')
+      }).catch(err => alert(err.message))
+  }
+
   return (
     <Navbar bg="light" expand="lg" className="bg-white fixed-top">
       <Navbar.Brand>

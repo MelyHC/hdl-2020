@@ -4,10 +4,10 @@ import iconCancel from '../assets/icons/icon-cancel.png';
 import userImg from '../assets/icons/icon-user.png';
 
 const CommentCard = () => (
-  <div className="">
-    <div className="d-flex flex-row justify-content-between py-3">
-      <div className="col-3">
-        <img className="img-user rounded-circle " src={userImg} alt="Foto usuario" />
+  <div className="bg-white">
+    <div className="d-flex flex-row justify-content-between p-3">
+      <div className="col-3 p-0">
+        <img className="img-user rounded-circle" src={userImg} alt="Foto usuario" />
       </div>
       {/* ${objPost.photo ? `<img className = "user" src="${objPost.photo}"> ` : '<img className = "user" src="assets/user.png">'} */}
       <div className="col-7 p-0 d-flex flex-column justify-content-center">
@@ -23,7 +23,7 @@ const CommentCard = () => (
           </div>
         </div>
       </div>
-      <div className="col-2 text-right">
+      <div className="col-2 text-right p-0">
         <div className="btn-group dropleft">
           <button className="btn btn-sm btn-light bg-white border-0" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             ...

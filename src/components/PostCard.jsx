@@ -6,18 +6,18 @@ import AddComment from '../assets/icons/icon-addComment.png';
 
 const PostCard = () => {
   return (
-    <div className="card">
+    <div className="bg-white my-2">
       <div className="">
-        <div className="d-flex flex-row justify-content-between pt-3">
-          <div className="col-3">
+        <div className="d-flex flex-row justify-content-between p-3">
+          <div className="col-3 p-0">
             <img className="img-user rounded-circl " src={logoUser} alt="Foto usuario" />
           </div>
           {/* ${objPost.photo ? `<img className = "user" src="${objPost.photo}"> ` : '<img className = "user" src="assets/user.png">'} */}
-          <div className="col-5 d-flex flex-column justify-content-center">
+          <div className="col-5 p-0 d-flex flex-column justify-content-center">
             <h5 className="m-0">Sonia</h5>
             <time className="text-muted" dateTime="date">12 h</time>
           </div>
-          <div className="col-4 text-right">
+          <div className="col-4 p-0 text-right">
             <div className="btn-group dropleft">
               <button className="btn btn-sm btn-light bg-white border-0" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 ...
@@ -44,19 +44,20 @@ const PostCard = () => {
         {/* <button className="hide" hidden id="btnSave">💾</button>
         <button className="hide" hidden id="btnCancel">✖️</button> */}
         <div className="row p-0 m-0 justify-content-around">
-          <button className="col-5 btn btn-primary">
-            <img src="assets/like-solid-24.png" alt="2" />Me gusta
+          <button className="col-4 btn btn-light-pink p-1">
+            {/* <img src="assets/like-solid-24.png" alt="2" /> */}
+            Me Ayudó
            </button>
-          <button className="col-5 btn btn-pink text-white">
+          <button className="col-4 btn btn-light-pink p-1">
+            {/* <img src="assets/like-solid-24.png" alt="2" /> */}
+            Me indigna
+           </button>
+          <button className="col-4 btn btn-light-pink p-1">
             <img src={AddComment} alt="" />Comentar
             </button>
         </div>
-        {/* <div> */}
         <CreateComment />
-        {/* </div> */}
-        {/* <div> */}
         <CommentCard />
-        {/* </div> */}
       </div>
     </div>
   );

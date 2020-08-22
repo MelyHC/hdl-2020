@@ -20,26 +20,24 @@ const Home = () => {
   // console.log(currentUserData);
   // console.log(currentUser);
   return (
-    <div className="container-fluid bg-gray">
+    <div className=" bg-gray">
       <NavBar />
       <div className="container pt-5 mt-5">
         <div className="row">
-          <div className="col">
+          <div className="col-md-3 p-0 p-md-3">
             <UserInfo currentUser={currentUser} />
           </div>
-          <div className="col">
+          <div className="col-md-6 p-0  p-md-3">
             <CreatePost />
             <PostCard />
           </div>
-          <div className="col">
-          <button className="btn btn-ts" type="button">Pedir Ayuda</button>
-            <InfoCard />
-            <InfoCard />
+          <div className="col-md-3 p-0 p-md-3">
+            <a href="tel:024238840" className="btn btn-pink text-white" type="button">Pedir Ayuda</a>
             <InfoCard />
           </div>
-            <section>
-              {/* todos los post */}
-            </section>
+          <section>
+            {/* todos los post */}
+          </section>
         </div>
       </div>
     </div>
